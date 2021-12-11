@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native';
-import Header from './components/header/Header';
-import MainScreen from './components/homeMain/MainScreen'
-import Footer from './components/footer/Footer'
-import { globaStyles } from './components/styles/styles';
+import Header from './screens/Main/components/Header/Header';
+import MainScreen from './screens/Main/MainScreen'
+import Footer from './screens/Main/components/Footer/Footer'
+import { style } from './screens/Main/components/styles';
 
 export default function App() {
   return (
-    <SafeAreaView style={globaStyles.conteiner}>
+    <SafeAreaView style={style.conteiner}>
       <Header />
       <MainScreen />
       <Footer />

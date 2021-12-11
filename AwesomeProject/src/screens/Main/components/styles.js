@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-export const homeMainStyle = StyleSheet.create({
-    main: {
-        flex: 3,
-        flexDirection: 'column',
-        
-        alignItems: 'center',
-        backgroundColor: '#ccc',
-        paddingTop: 30,
+export const style = StyleSheet.create({
+    conteiner: {
+        flex: 1,
+        backgroundColor: '#000'
+    },
+    flatList: {
+        backgroundColor: '#000',
+        color: 'red'
     },
     listItemText: {
         width: 300,

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import {View, Text, FlatList} from 'react-native';
-import ListItem from './ListItem';
-import Form from './Form';
-import { homeMainStyle } from './styles/styles'
+import {View, FlatList} from 'react-native';
+import ListItem from './components/ListItem';
+import Form from './components/Form';
+import { mainStyle } from './styles'
 
 export default function HomeMain() {
     const [listOfItems, setListOfItems] = useState([
@@ -24,7 +24,7 @@ export default function HomeMain() {
         });
     }
     return (
-        <View style= {homeMainStyle.main}>
+        <View style= {mainStyle.main}>
             <Form addHandl={addHandl} />
             <FlatList data={listOfItems} renderItem = {({ item }) => (
             <ListItem el={item} deleteHandl={deleteHandl} />
